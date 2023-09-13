@@ -15,13 +15,16 @@ The directory structure of the files should be respected.
 
 ## Compiling
 1. Set up your config and credentials in the .aws folder
-2. To compile the program, in your console enter “python3 filename operation directory-name bucket-name” 
+2. To compile the program, in your console enter “python3 filename command directory-name bucket-name” 
 for example:
-  -  **% backup** “python3 aws.py backup testfile thebucket”
-  -  **% restore** “python3 aws.py restore testfile thebucket”
-
+  -  **% backup** “python3 aws.py backup testFolder backupBucket”
+  -  **% restore** “python3 aws.py restore testFolder restoreBucket”
 3. The program will then run and display its progress on the console
-**Note 1: For directory with spaces enclose them with quotation mark like this “ “C:\Users\Student\Desktop\space test” ”**
-**Note 2: for the directory name, you can either enter the local path name like “awstest” or absolute path like “C:\Users\Student\Desktop\awstest” that can be with either forward or back slash.**
-**Note 3: you can enter “.” Or “./” for local directory**
 
+
+**Note 1: For directory with spaces enclose them with quotation mark like this “ “C:\Users\Student\Desktop\space test” ”**
+**Note 2: For the directory name, you can either enter the local path name like “localFolder” or absolute path like “C:\Users\Student\Desktop\localFolder” that can be with either forward or backslash.**
+**Note 3: You can enter “.” Or “./” for local directory**
+
+## Services and API
+For this program, we will use the AWS S3 Bucket API to backup and restore our files from and to the cloud. For this to work, you will also need to have AWS CLI installed and create a user using IAM console. For more information about that [Click Here](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#installation)
