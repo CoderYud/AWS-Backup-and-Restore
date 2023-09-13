@@ -21,10 +21,12 @@ The directory structure of the files should be respected.
       -  **% backup** “python3 aws.py backup testFolder backupBucket”
       -  **% restore** “python3 aws.py restore testFolder restoreBucket”
 3. The program will then run and display its progress on the console
-![backup](https://github.com/CoderYud/AWS-Backup-and-Restore/assets/73090278/6aac3662-c036-4d4a-93a7-3c48b5931220)
+![backup](https://github.com/CoderYud/AWS-Backup-and-Restore/assets/73090278/831200c9-fbd8-4a80-9f3a-77f099901d46)
+
 <p align="center">Figure 1. Backup</p>
 
-![restore](https://github.com/CoderYud/AWS-Backup-and-Restore/assets/73090278/a0fa9d93-d6e6-4ec1-82d4-996976b28ea2)
+![restore](https://github.com/CoderYud/AWS-Backup-and-Restore/assets/73090278/c2cee59e-3fac-4930-9fbb-b84b2a82d7a1)
+
 <p align="center">Figure 2. Restore</p>
 
 **Note 1: For directory with spaces enclose them with quotation mark like this “ “C:\Users\Student\Desktop\space test” ”.**
